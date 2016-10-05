@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "19998856185",
+    "project_id": "firebase-trackevent"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19998856185:android:6b2256bbc4d06766",
+        "android_client_info": {
+          "package_name": "jp.co.a328w.kubox.ganaltrackevent"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMZJ6eTmzllvegyJNr3-c38EG5gO5ZV0M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-85220723-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
