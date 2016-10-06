@@ -53,20 +53,20 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.button1)
     public void onClickButton1() {
-        Log.d("test", addBuildInfoToActionName("gradle21_button1"));
-        sendEvent("button", addBuildInfoToActionName("gradle21_button1"));
+        Log.d("test", addBuildInfoToActionName("ga84_gs21_button1"));
+        sendEvent("button", addBuildInfoToActionName("ga84_gs21_button1"));
     }
 
     @OnClick(R.id.button2)
     public void onClickButton2(){
-        Log.d("test", addBuildInfoToActionName("gradle21_button2"));
-        sendEvent("button", addBuildInfoToActionName("gradle21_button2"));
+        Log.d("test", addBuildInfoToActionName("ga84_gs21_button2"));
+        sendEvent("button", addBuildInfoToActionName("ga84_gs21_button2"));
     }
 
     @OnClick(R.id.button3)
     public void onClickButton3(){
-        Log.d("test", addBuildInfoToActionName("gradle21_button3"));
-        sendEvent("button", addBuildInfoToActionName("gradle21_button3"));
+        Log.d("test", addBuildInfoToActionName("ga84_gs21_button3"));
+        sendEvent("button", addBuildInfoToActionName("ga84_gs21_button3"));
     }
 
 
@@ -76,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
             .setAction(actionName)
             .build());
     }
-//
 
 
 }
