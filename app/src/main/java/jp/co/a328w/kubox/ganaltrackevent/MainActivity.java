@@ -1,5 +1,6 @@
 package jp.co.a328w.kubox.ganaltrackevent;
 
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -21,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.button3) Button button3;
 
     private Tracker mTracker;
+    private String mAndroidVersion;
+    private String mSmartPhoneModelName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,24 +39,34 @@ public class MainActivity extends AppCompatActivity {
         mTracker.setScreenName("MainActivity");
         mTracker.send(new HitBuilders.ScreenViewBuilder().build());
 
+        mSmartPhoneModelName = Build.MODEL;
+        mAndroidVersion = Build.VERSION.RELEASE;
+    }
+
+    private String addBuildInfoToActionName(String actionName){
+        String buildInfoActionName = "";
+
+        buildInfoActionName = mSmartPhoneModelName + " " + mAndroidVersion + " " + actionName;
+
+        return buildInfoActionName;
     }
 
     @OnClick(R.id.button1)
     public void onClickButton1() {
-        Log.d("test", "button1");
-        sendEvent("button", "button1");
+        Log.d("test", addBuildInfoToActionName("button1"));
+//        sendEvent("button", addBuildInfoToActionName("button1"));
     }
 
     @OnClick(R.id.button2)
     public void onClickButton2(){
-        Log.d("test", "button2");
-        sendEvent("button", "button2");
+        Log.d("test", addBuildInfoToActionName("button2"));
+//        sendEvent("button", addBuildInfoToActionName("button2"));
     }
 
     @OnClick(R.id.button3)
     public void onClickButton3(){
-        Log.d("test", "button3");
-        sendEvent("button", "button3");
+        Log.d("test", addBuildInfoToActionName("button3"));
+//        sendEvent("button", addBuildInfoToActionName("button3"));
     }
 
 
