@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.button3) Button button3;
 
     private Tracker mTracker;
+    private final String actionName = "gradle22_gs212_";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,20 +41,20 @@ public class MainActivity extends AppCompatActivity {
 
     @OnClick(R.id.button1)
     public void onClickButton1() {
-        Log.d("test", "button1");
-        sendEvent("button", "button1");
+        Log.d("test", actionName + "button1");
+        sendEvent("button", actionName + "button1");
     }
 
     @OnClick(R.id.button2)
     public void onClickButton2(){
-        Log.d("test", "button2");
-        sendEvent("button", "button2");
+        Log.d("test", actionName + "button2");
+        sendEvent("button", actionName + "button2");
     }
 
     @OnClick(R.id.button3)
     public void onClickButton3(){
-        Log.d("test", "button3");
-        sendEvent("button", "button3");
+        Log.d("test", actionName + "button3");
+        sendEvent("button", actionName + "button3");
     }
 
 
