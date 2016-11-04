@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.button3) Button button3;
 
     private Tracker mTracker;
-    private final String actionName = "gradle210_gs200a3_wrapper210";
+    private final String actionName = "HOGEgradle210_gs200a3_wrapper210";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

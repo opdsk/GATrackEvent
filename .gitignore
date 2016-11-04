@@ -1,8 +1,76 @@
+# IntelliJ
+.idea/*
 *.iml
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
+
+# gradle
+.gradle
+build/
+gradle.properties
+
+# Android.gitignore
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+out/
+obj/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Global/Eclipse.gitignore
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+# Global/OSX.gitignore
 .DS_Store
-/build
-/captures
-.externalNativeBuild
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Global/Windows.gitignore
+# Windows image file caches
+Thumbs.db 
+
+# Folder config file
+Desktop.ini
+
+*.keystore
+*.so
