@@ -1,3 +1,5 @@
+import org.ajoberstar.grgit.*
+
 apply plugin: 'com.android.application'
 apply plugin: 'com.neenbedankt.android-apt'
 apply plugin: 'com.jakewharton.butterknife'
